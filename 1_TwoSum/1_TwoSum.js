@@ -1,7 +1,14 @@
 "use strict";
 function twoSum(nums, target) {
-    for (var i = 0; i < nums.length; i++) {
-        console.log(nums[i]);
+    var result = 0;
+    var posp = 0;
+    var poss = posp + 1;
+    var valp = 0;
+    var vals = 0;
+    while (target != result) {
+        valp = nums[posp];
+        vals = nums[poss];
+        result = valp + vals;
     }
 }
 ;
