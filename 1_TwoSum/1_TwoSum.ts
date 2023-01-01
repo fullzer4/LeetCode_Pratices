@@ -1,17 +1,18 @@
-function twoSum(nums: number[], target: number) {
-    var result:number = 0
-    var posp:number = 0
-    var poss:number = posp + 1
-    var valp:number = 0
-    var vals:number = 0
+function twoSum(nums: number[], target: number): number[] {
+	let result: number[] = [];
+
+	for (var n1 = 0; n1 < nums.length; n1++) {
+
+		for (var n2 = n1 + 1; n2 < nums.length; n2++) {
+
+			if (nums[n1] + nums[n2] == target) {
+
+				return [n1, n2];
+
+			}
+		}
+	}
+
+	return result;
     
-    while (target != result){
-        valp = nums[posp]
-        vals = nums[poss]
-
-        result = valp + vals
-
-    }
-};
-
-twoSum([2,7,11,15], 9)
+}
