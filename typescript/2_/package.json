@@ -1,0 +1,28 @@
+{
+  "name": "leetcode_pratices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullzer4/LeetCode_Pratices.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fullzer4/LeetCode_Pratices/issues"
+  },
+  "homepage": "https://github.com/fullzer4/LeetCode_Pratices#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
+}
