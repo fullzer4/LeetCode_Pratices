@@ -1,4 +1,4 @@
-let nums = [0,1,2,3,9,5,6,7,10];
+let nums = [0,1,2,3,4,9,5,6,7,10];
 
 var summaryRanges = function(nums: Array<number>) {
 
@@ -14,10 +14,14 @@ var summaryRanges = function(nums: Array<number>) {
         Fnumber = nums[i]
         console.log(nums[i])
         order[0] = `${first}->${Fnumber}`
+        point++
       }
     }
+    if(nums[i] != nums[i + 1]){
+      order.push(`${nums[i]}`)
+      point++
+    }
   }
-
   return order;
 };
 
